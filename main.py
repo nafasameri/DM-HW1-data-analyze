@@ -115,3 +115,15 @@ plt.xlabel('income,gender')
 plt.ylabel('count')
 plt.title('Income and Gender distribution in the dataset')
 plt.savefig('income-sex.png')
+
+
+print('============== occupation ===============')
+occupation = adult_data['occupation']
+
+plt.figure(figsize=(10, 10))
+plt.hist(occupation)
+plt.xticks(rotation=30, ha="right")
+plt.xlabel('occupation')
+plt.ylabel('count')
+plt.title('Occupation distribution in the dataset')
+plt.savefig('occupation.png')
